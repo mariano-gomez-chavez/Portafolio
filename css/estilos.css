@@ -1,17 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    color: #333;
+    color: #7A7A7A;
     font: 400;
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+ background-attachment: fixed;
 
+}
 
+/*es el banner*/
+nav {
+    background-color: #ff0000;
+    background-image: url();
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 100px;    
+    
+  
 }
 
 
@@ -25,15 +37,70 @@ nav h1 {
     margin-right: auto;
 }
 
-nav a,
-footer a {
+nav a {
     margin-left: 20px;
-    color: #7A7A7A;
+   /* color: #7A7A7A;*/
     text-decoration: none;
-    
+    color:white;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+ 
+}
+
+.encolumnar{
+    display:flex;
+    justify-content:center;
+ 
+}
+
+.encolumnar a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-centrado{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-centrado img{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    width: 40px;
+
 }
 
 
+
+.footer-centrado a{ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+.div-footer{
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.link-footer a{
+text-decoration: none;
+color: white;
+
+}
 nav a:hover {
     text-decoration: underline;
 }
@@ -43,6 +110,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     padding: 20px;
+   
 }
 
 
@@ -69,12 +137,35 @@ header h1 {
     font-family: 'Coiny', cursive;
 }
 
-h1,h2,h3,h4, .item { color: black;}
+h1,h2,h3,h4, .item { color:  #ff0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  
+
+
+}
+
+h1{
+    animation: desvanecer 4s infinite;
+}
+
+@keyframes desvanecer {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 h2,
 h3 {
     font-size: 20px;
-    background-color: #FCEE21;
-    display: inline;
+    background-color: white;
+    display:inline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 h3 {
@@ -88,14 +179,15 @@ h2 {
 .item {
     font-size: 24px;
     font-weight: bold;
-    background-color: #FCEE21;
+    background-color: white;
 
 }
 /* aca manejo la imagen de las redes sociales*/
 aside img {
     height: auto;
     width: 20%;
-    margin-top: 25%;
+    margin-top: 20%;
+    margin-right: 1%;
 }
 
 
@@ -108,6 +200,7 @@ aside img {
 header.encolumnar,
 aside.encolumnar {
     border-bottom: none;
+    
 }
 
 
@@ -126,17 +219,45 @@ aside {
 footer {
     height: 100px;
     padding: 10px;
-    background-color: #FCEE21;
+    background-color: #ff0000;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+  
 }
 
 #imagen {
     width: 80%;
     display: block;
     margin: auto;
-}
+    border-radius: 10px;
+  }
 
+.button{  
+    
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff4444;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+
+    background-image: url("img/flechita.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  
+}
 
 span {
     color: red;
@@ -147,26 +268,50 @@ label {
     margin-bottom: 5px;
 }
 
-input {
-    height: 40px;
-}
 
-input,
-textarea {
-    width: 100%;
-}
+
 
 form {
     margin: auto;
+    background-color: #8bf;
+   
+}
+input{  
+    margin: 15px;
+    padding: 10px;
+    width: auto;
+    font-size: 18px;
+    min-width: 100px;   
+
+    min-height: 100px;
+     max-height:200px;
+  
+}
+textarea{
+    font-size: 18px;
+    margin: 15px;
+    padding: 10px;
+    width: auto;
+    min-width: 100px;   
+    max-width: 300px;
+    min-height: 100px;
+    max-height:200px;
 }
 
 .encolumnar {
     display: flex;
-    justify-content: space-between;
-
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    /*padding: 20px;
     margin-bottom: 30px;
-    border-bottom: 0.5px solid gray;
+    border-bottom: 0.5px solid gray;*/
+}
+
+.encolumnar-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .boton {
@@ -174,13 +319,16 @@ form {
     border-bottom: none;
 }
 
+
 .boton input {
 
     border: none;
     width: auto;
-    background-color: black;
+    background-color: rgb(54, 54, 255);
     color: white;
     font-weight: bold;
+    cursor: pointer;
+    
 }
 
 ol li {
@@ -191,21 +339,43 @@ ol li {
 h4 {
     margin: 0;
     font-size: 51px;
-    color: white;
-    background-color: black;
+    color: #ff0000;
+    background-color: white;
     line-height: 100px;
     padding: 10px;
     display: inline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 footer h1 {
     font-size: 33px;
 }
 
-section {
+section, .section-form{
     width: 45%;
+    
+
 }
+
 
 main {
     font-size: 21px;
+}
+
+/* de aca para abajo se modifica el celular */
+@media screen and (max-width: 875px){
+    .encolumnar-form{
+        display:flex;
+        flex-direction: column;
+    }
+
+.section-form{
+    width: 80%;
+}
+
+textarea, input{
+    width: 95%;
+
+}
+
 }
