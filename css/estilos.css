@@ -292,7 +292,7 @@ textarea{
     margin: 15px;
     padding: 10px;
     width: auto;
-    min-width: 100px;   
+    min-width: 550px;   
     max-width: 300px;
     min-height: 100px;
     max-height:200px;
@@ -314,22 +314,37 @@ textarea{
     
 }
 
+.encolumnar-form input[name="nombre"], /* de esta manera trabajo solamente los botones nombre y mail juntos*/
+.encolumnar-form input[name="email"] {
+    margin: 15px;
+    padding: 10px;
+    width: auto;
+    font-size: 18px;
+    min-width: 550px;
+    min-height: 100px;
+    max-height: 200px;
+}
+
 .boton {
     padding: 0;
     border-bottom: none;
-}
-
-
-.boton input {
-
-    border: none;
-    width: auto;
+  }
+  
+  .boton input[type="submit"] { /* de esta manera trabajo solamente el boton de enviar consulta*/
+    
     background-color: rgb(54, 54, 255);
     color: white;
     font-weight: bold;
     cursor: pointer;
-    
-}
+  }
+  
+  .boton input[type="reset"] {/* de esta manera trabajo solamenteel boton de borrar*/
+   
+    background-color: rgb(54, 54, 255);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
 
 ol li {
     margin-bottom: 6%;
