@@ -16,7 +16,7 @@ body {
 
 /*es el banner*/
 nav {
-    background-color: #ff0000;
+    background-color:  #991a46;
     background-image: url();
     background-size: contain;
     background-repeat: no-repeat;
@@ -53,6 +53,10 @@ nav a {
  
 }
 
+.cv{
+    text-decoration: underline;
+    color: wheat;
+}
 .encolumnar a{
     display:flex;
     justify-content: center;
@@ -137,7 +141,7 @@ header h1 {
     font-family: 'Coiny', cursive;
 }
 
-h1,h2,h3,h4, .item { color:  #ff0000;
+h1,h2,h3,h4, .item { color:  #991a46;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   
 
@@ -219,7 +223,7 @@ aside {
 footer {
     height: 100px;
     padding: 10px;
-    background-color: #ff0000;
+    background-color: #991a46;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -241,7 +245,7 @@ footer {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    background-color: #ff4444;
+    background-color: #991a46;
     color: #fff;
     border-radius: 4px;
     border: none;
@@ -274,7 +278,7 @@ label {
 form {
     margin: auto;
     background-color: #8bf;
-   
+    padding: 2%;
 }
 input{  
     margin: 15px;
@@ -311,7 +315,7 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 50px;
 }
 
 .encolumnar-form input[name="nombre"], /* de esta manera trabajo solamente los botones nombre y mail juntos*/
@@ -354,7 +358,7 @@ ol li {
 h4 {
     margin: 0;
     font-size: 51px;
-    color: #ff0000;
+    color: #991a46;
     background-color: white;
     line-height: 100px;
     padding: 10px;
@@ -376,6 +380,25 @@ section, .section-form{
 main {
     font-size: 21px;
 }
+
+/*carousel*/
+.carousel {
+    max-width: 600px; /* Ancho fijo del carousel */
+    margin: 0 auto; /* Centra el carousel en el centro de su contenedor */
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+
 
 /* de aca para abajo se modifica el celular */
 @media screen and (max-width: 875px){
@@ -399,15 +422,32 @@ textarea, input{
 }
 
 footer{
-    height: 100px;
+    height: auto;
     padding: 10px;
-    background-color: #ff0000;
+    background-color: #991a46;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    overflow-x:scroll;
+    flex-direction: column;
 
 }
 
+/* carousel */
+.carousel {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .carousel-inner {
+    display: flex;
+    flex-wrap: wrap; /* Cambia flex-wrap a wrap para permitir que los elementos del carousel se envuelvan en dispositivos móviles */
+  }
+
+  .carousel-item {
+    flex: 0 0 100%; /* Ajusta el ancho de cada item al 100% del contenedor en dispositivos móviles */
+  }
 }
+
+
+
