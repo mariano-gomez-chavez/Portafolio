@@ -334,7 +334,7 @@ textarea{
     border-bottom: none;
   }
   
-  .boton input[type="submit"] { /* de esta manera trabajo solamente el boton de enviar consulta*/
+  .boton .enviar { /* de esta manera trabajo solamente el boton de enviar consulta*/
     
     background-color: rgb(54, 54, 255);
     color: white;
@@ -342,7 +342,7 @@ textarea{
     cursor: pointer;
   }
   
-  .boton input[type="reset"] {/* de esta manera trabajo solamenteel boton de borrar*/
+  .boton .borrar {/* de esta manera trabajo solamenteel boton de borrar*/
    
     background-color: rgb(54, 54, 255);
     color: white;
